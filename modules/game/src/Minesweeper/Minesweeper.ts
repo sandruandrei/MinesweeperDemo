@@ -301,6 +301,7 @@ class Minesweeper extends AbstractGame {
 
         this.cards.forEach((row) => {
             row.forEach((card) => {
+                this.cardsContainer.addChild(card);
                 card.reset();
             });
         });
